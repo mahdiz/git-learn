@@ -1,7 +1,7 @@
 # Learning Git
 
 ### HEAD
-the current commit your repository is on. Most of the time HEAD points to the latest commit in your branch.
+The current commit your repository is on. Most of the time HEAD points to the latest commit in your branch.
 
 ### master
 The name of the default branch that git creates for you when first creating a repo. In most cases, "master" means "the main branch".
@@ -157,7 +157,7 @@ hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAM
 
 
 ## Stashing
-When you donât want to do a commit of half-done work just so you can get back to a point later, you use âgit stashâ.
+When you don't want to do a commit of half-done work just so you can get back to a point later:
 ```bash
 git stash          # To push a new stash onto your stack
 git stash list     # To see which stashes youâve stored, you can use git stash list
