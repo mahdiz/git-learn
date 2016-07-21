@@ -18,6 +18,8 @@ git remote add origin <URL>
 git push origin master
 ```
 
+## Adding Local Changes
+
 ### Cancel add
 ```bash
 git reset				               # undos "git add ."
