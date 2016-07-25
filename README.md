@@ -38,6 +38,8 @@ git status
 git log                            # Detailed
 git log --pretty=short             # Short
 git log --pretty=oneline           # Each commit in one line
+git log --author="Mahdi Zamani"    # Commits made by a person
+git log --grep=word                # Search in commits messages
 ```
 
 ### Commit changes
