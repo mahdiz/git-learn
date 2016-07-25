@@ -33,15 +33,6 @@ git status
 
 ## Commits
 
-### Showing commit history
-```bash
-git log                            # Detailed
-git log --pretty=short             # Short
-git log --pretty=oneline           # Each commit in one line
-git log --author="Mahdi Zamani"    # Commits made by a person
-git log --grep=word                # Search in commits messages
-```
-
 ### Commit changes
 ```bash
 git commit -m "new changes message"
@@ -57,6 +48,20 @@ When forgotten something in a commit and want to add it later.
 ```bash
 git add forgotten_file
 git commit --amend
+```
+
+### Show commit history
+```bash
+git log                            # Detailed
+git log --pretty=short             # Short
+git log --pretty=oneline           # Each commit in one line
+git log --author="Mahdi Zamani"    # Commits made by a person
+git log --grep=word                # Search in commits messages
+```
+
+### Show files changed in a commit
+```bash
+git diff-tree --name-only -r ffd96afe9f9d33abea3ebbbfd15b47ea8bd7c2a9
 ```
 
 ## Updating
