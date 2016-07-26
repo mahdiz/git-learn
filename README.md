@@ -162,7 +162,9 @@ Hub provides extra fetures for github.
 3. Close and open the terminal
 
 To convert an issue to a pull request (attach commits to an existing issue and mark that issue as pr):
-hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-changes 
+```bash
+hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-changes
+```
 
 
 ## Stashing
