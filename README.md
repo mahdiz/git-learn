@@ -172,18 +172,6 @@ git push origin :[name_of_branch]	        # Delete the branch on github
 git clone -b mybranch --single-branch git://sub.domain.com/repo.git
 ```
 
-## Using hub
-Hub provides extra fetures for github.
-1. Install hub by downaloding hub stand-alone executable from: https://github.com/github/hub/releases
-2. Run install.bat
-3. Close and open the terminal
-
-To convert an issue to a pull request (attach commits to an existing issue and mark that issue as pr):
-```bash
-hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-changes
-```
-
-
 ## Stashing
 When you don't want to do a commit of half-done work just so you can get back to a point later:
 ```bash
@@ -200,4 +188,16 @@ stash@{2}: WIP on master: 21d80a5 added number to log
 ```bash
 git stash apply stash@{2}		# To reapply a stash
 git stash drop					# To remove a stash
+```
+
+## Using hub
+Hub provides extra fetures for github.
+
+1. Install hub by downaloding hub stand-alone executable from: https://github.com/github/hub/releases;
+2. Run install.bat;
+3. Relaunch the terminal.
+
+To convert an issue to a pull request (attach commits to an existing issue and mark that issue as pr):
+```bash
+hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-changes
 ```
