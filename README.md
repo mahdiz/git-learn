@@ -18,7 +18,7 @@ git remote add origin <URL>
 git push origin master
 ```
 
-## Local Changes
+## Adding/Removing Files for Commit
 
 #### See local changes
 ```bash
@@ -42,7 +42,7 @@ By default, git tracks all files not listed in `.gitignore`. To untrack a file:
 ```bash
 git update-index --assume-unchanged file.txt
 ```
-The files untracked using this command will not be shown under "Untracked files" in `git status`.
+Files untracked using this command will not be shown under "Untracked files" in `git status`.
 
 #### Track a file
 ```bash
