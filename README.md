@@ -18,17 +18,34 @@ git remote add origin <URL>
 git push origin master
 ```
 
-## Adding Local Changes
-
-### Cancel add
-```bash
-git reset				               # undos "git add ."
-git reset file1.txt, file2.txt 		   # undos specific files
-```
+## Local Changes
 
 ### See local changes
 ```bash
 git status
+```
+
+### Add files to the next commit (aka, stage for commit)
+```bash
+git add .                      # Add all files in the current directory
+git add file1.txt file2.txt    # Add specific files
+```
+
+### Cancel add (aka, ustage for commit)
+```bash
+git reset				                   # Undo "git add ."
+git reset file1.txt, file2.txt     # Undo specific files
+```
+
+### Untrack a file (never check for changes)
+By default, git tracks all files not listed in `.gitignore`. To untrack a file:
+```bash
+git update-index --assume-unchanged file.txt
+```
+
+#### Track a file
+```bash
+git update-index --no-assume-unchanged file.txt
 ```
 
 ## Commits
