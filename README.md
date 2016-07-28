@@ -194,11 +194,11 @@ git stash drop					# To remove a stash
 ## Using hub
 Hub provides extra features for github. To install hub on your machine:
 
-1. Downaloding hub stand-alone executable from: https://github.com/github/hub/releases;
-2. Run install.bat;
+1. Download hub stand-alone executable from: https://github.com/github/hub/releases;
+2. Run `install` or `install.bat`;
 3. Relaunch the terminal.
 
 To convert an issue to a pull request (attach commits to an existing issue and mark that issue as a Pull Request):
 ```bash
-hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-changes
+hub pull-request -i <ISSUE-NUMBER> -b <ORIGINAL_AUTHOR>:master -h <YOUR_USER_NAME>:my-branch
 ```
