@@ -27,7 +27,8 @@ git status
 
 #### Add files to the next commit (aka, stage for commit)
 ```bash
-git add .                      # Add all files in the current directory
+git add .                      # Add all modified files (tracked and untracked) in the current directory
+git add -u .                   # Add only modified tracked files in the current directory
 git add file1.txt file2.txt    # Add specific files
 ```
 
