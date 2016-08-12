@@ -118,9 +118,9 @@ git revert HEAD
 
 #### Undo (revert) local changes
 ```bash
-git checkout -- file.txt      # Undo changes made to a file
+git checkout -- file.txt      # Undos changes made to a file
 git reset --hard              # Undos all changes in tracked files
-git clean -df		              # Removes untracked files (recommended after "git reset --hard")
+git clean -df                 # Removes untracked files (recommended after "git reset --hard")
 git checkout -- <file_name>   # Replace with remote version
 ```
 
