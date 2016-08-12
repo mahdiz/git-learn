@@ -116,10 +116,11 @@ git reset --hard FETCH_HEAD			# reset this repository's master branch to the com
 git revert HEAD
 ```
 
-#### Undo (revert) all local changes
+#### Undo (revert) local changes
 ```bash
-git reset --hard	# Undos changes in tracked files
-git clean -df		# Removes untracked files (recommended after "git reset --hard")
+git checkout -- file.txt      # Undo changes made to a file
+git reset --hard              # Undos all changes in tracked files
+git clean -df		              # Removes untracked files (recommended after "git reset --hard")
 git checkout -- <file_name>   # Replace with remote version
 ```
 
