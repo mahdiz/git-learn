@@ -148,7 +148,7 @@ git merge origin/master		# Accept remote changes
 ```
 
 ## Branches
-Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone youâre collaborating with.
+Changes you make on a branch don't affect the master branch, so you're free to experiment and commit changes, safe in the knowledge that your branch won't be merged until it's ready to be reviewed by someone you're collaborating with.
 
 #### Existing branches
 ```bash
