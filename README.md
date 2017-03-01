@@ -69,6 +69,11 @@ git add forgotten_file
 git commit --amend
 ```
 
+#### Undo a commit not pushed to remote
+```bash
+git reset --hard HEAD~1    # will get you back 1 commit
+```
+
 #### Show commit history
 ```bash
 git log                            # Detailed
